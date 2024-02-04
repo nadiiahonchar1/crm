@@ -5,7 +5,7 @@ export enum Status {
   Active='active',
   NotActive='notActive',
   Pending='pending',
-  Suspendet='suspendet'
+  Suspended='suspended'
 }
 
 export interface StatusLabelProps {
@@ -19,7 +19,7 @@ export default function StatusLabel({ children, status, disabled }: StatusLabelP
     status === Status.Active && 'text-green-700 bg-green-100',
     status === Status.NotActive && 'text-red-700 bg-red-100',
     status === Status.Pending && 'text-orange-700 bg-orange-100',
-    status === Status.Suspendet && 'text-blue-700 bg-blue-100',
+    status === Status.Suspended && 'text-blue-700 bg-blue-100',
     {
       ['opacity-75 cursor-not-allowed']: disabled,
     },)}>
