@@ -1,5 +1,4 @@
 import AddCompanyButton from './components/add-company-button';
-import MagicButton from './components/magic-button';
 import StatusLabel, { Status } from './components/status-label';
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
       <StatusLabel status={Status.Pending}>Active Label</StatusLabel>
       <StatusLabel status={Status.Suspended}>Active Label</StatusLabel>
       <AddCompanyButton />
-      <MagicButton/>
     </main>
   );
 }
